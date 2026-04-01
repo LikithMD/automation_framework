@@ -4,5 +4,5 @@ jobs:
   basic-job:
     runs-on: ubuntu-latest
     steps:
-      name: basic-step
-      run: echo "Hello World!!!"
+      - name: basic-step
+        run: echo "Hello World!!!"
