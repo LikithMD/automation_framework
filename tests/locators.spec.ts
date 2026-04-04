@@ -6,7 +6,7 @@ test('', async ({page}) => {
     const heading: Locator = page.locator("//h1[@class='title']");
 
     await expect(heading).toBeVisible();
-    await expect(heading).toHaveText('Test Automation Practice');
+    await expect(heading).toHaveText('Automation Testing Practice');
 
     const subHeading: Locator = page.locator("p[class='description'] span");
 
