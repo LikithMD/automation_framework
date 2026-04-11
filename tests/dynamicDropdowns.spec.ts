@@ -5,7 +5,9 @@ test('Dynamic Dropdown test', async ({page}) => {
 
     expect(page.url()).toBe('https://www.amazon.com/');
 
-    await page.getByLabel('Search Amazon').click();
+    await page.waitForTimeout(5000);
+
+    await page.getByPlaceholder('Search Amazon').click();
     await page.getByPlaceholder('Search Amazon').fill('smart');
 
     const allOptions: Locator = page.getByRole('row');
